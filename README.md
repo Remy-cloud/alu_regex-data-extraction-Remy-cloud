@@ -1,0 +1,1 @@
+This is a readme file for a repository for Regex - Onboarding Hackathon assignment where the task is to extract the required data from the hundreds of thousands of pages of string response we get from our API, we have decided to unleash the raw power of Regular Expressions. 
