@@ -35,7 +35,7 @@ const extractURLs = (text) => {
 
 //regex to extract credit card numbers
 
-const extractCreditCardNumbers = (text) => {
+const extractCreditCards = (text) => {
     const creditCardRegex = /\b(?:\d{4}[- ]?){3}\d{4}\b/g;
     return text.match(creditCardRegex);
 };
@@ -45,5 +45,5 @@ const extractCreditCardNumbers = (text) => {
 module.exports = {
     extractHashtags,extractHTMLTags,
     extractEmails,extractPhoneNumbers,
-    extractURLs,extractCreditCardNumbers
+    extractURLs,extractCreditCards
 };
