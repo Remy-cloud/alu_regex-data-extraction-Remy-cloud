@@ -1,6 +1,6 @@
 //Regex that extract hashtags
 
-const hashtagregex = (text) => {
+const extractHashtags = (text) => {
     const hashtagRegex = /#\w+/g;
     return text.match(hashtagRegex);
 };
@@ -40,3 +40,10 @@ const extractCreditCardNumbers = (text) => {
     return text.match(creditCardRegex);
 };
 
+//exporting all functions
+
+module.exports = {
+    extractHashtags,extractHTMLTags,
+    extractEmails,extractPhoneNumbers,
+    extractURLs,extractCreditCardNumbers
+};
